@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  background-color: darkgray;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+}
+.left {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left h2 {
+  margin: 6px;
+  font-size: 36px;
+}
+.left p {
+  margin: 6px;
+}
+.left-img {
+  max-width: 160px;
+  max-height: 160px;
+  border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+}
+.left-img img {
+  width: 2000px;
+  height: 200px;
+  object-fit: cover;
+}
+.right {
+  flex-basis: 65%;
+}
+.a-icons {
+  display: flex;
+  gap: 20px;
+}
+.a-icons a {
+  color: white;
+  text-decoration: none;
+}
+.a-icons div {
+  padding: 10px;
+  border-radius: 50%;
+}
+.a-icons div:hover {
+  background: #bbb;
+}
+.left button {
+  font-size: 20px;
+  color: #ddd;
+  background-color: transparent;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+}
+.left button:hover {
+  background-color: white;
+  color: aqua;
+  border: 2px solid white;
+}
+.right {
+  background-color: #222;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.right h2 {
+  font-size: 60px;
+}
+.right p {
+  font-size: 26px;
+  color: #ddd;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px;
+  padding: 40px 15px;
+  background-color: darkgray;
+  position: absolute;
+  top: 52px;
+  right: 80px;
+  border-radius: 40px;
+}
+.toolbar a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+.toolbar a::before{
+  position: absolute;
+  content: "";
+  right: -16px;
+  width: 60px;
+  height: 30px;
+  padding-top: 5px;
+  background-color: rgba(33, 160, 207, 0);
+  text-align: center;
+  transition: 1s;
+}
+.toolbar a:hover a::before{
+  content: "LOREM";
+  background-color: rgb(33, 160, 207, 1);
+  transform: translateX(-40px);
+}
